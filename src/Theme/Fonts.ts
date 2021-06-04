@@ -1,15 +1,7 @@
-/**
- * This file contains all application's style relative to fonts
- */
+import { ThemeVariables } from '@/Theme/theme.type'
 import { StyleSheet } from 'react-native'
-import { ThemeVariables, ThemeFonts } from '@/Theme/theme.type'
 
-/**
- *
- * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
- * @return {*}
- */
-export default function ({ FontSize, Colors }: ThemeVariables): ThemeFonts {
+export default function Fonts({ FontSize, Colors }: ThemeVariables) {
   return StyleSheet.create({
     textSmall: {
       fontSize: FontSize.small,

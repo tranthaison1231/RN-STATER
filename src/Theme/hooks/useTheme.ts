@@ -17,8 +17,7 @@ import {
   ThemeVariables,
 } from '@/Theme/theme.type'
 
-export default function () {
-  // Get the scheme device
+export default function useTheme() {
   const colorScheme = useColorScheme()
 
   // Get current theme from the store
@@ -71,13 +70,6 @@ export default function () {
   )
 }
 
-/**
- * Generate Theme with theme variables
- *
- * @param variables
- * @param theme
- * @return {{}|{[p: string]: *}}
- */
 const formatTheme = (
   variables: ThemeVariables,
   theme: Partial<Theme>,
@@ -90,15 +82,6 @@ const formatTheme = (
   }, {})
 }
 
-/**
- * Merge all variables for building the theme
- * baseTheme <- currentTheme <- currentDarkTheme
- *
- * @param variables : {MetricsSizes?: {small: number, large: number, tiny: number, regular: number}, NavigationColors?: {primary: string}, FontSize?: {small: number, large: number, regular: number}, Colors?: {white: string, success: string, text: string, error: string, transparent: string, primary: string}} variables from @Theme/Variables
- * @param themeConfig : currentTheme form @Theme/themes
- * @param darkThemeConfig : currentDarkTheme from @Theme/themes
- * @return {{}|{[p: string]: *}}
- */
 const mergeVariables = (
   variables: ThemeVariables,
   themeConfig: Partial<ThemeVariables>,
@@ -115,15 +98,6 @@ const mergeVariables = (
     }
   }, {} as ThemeVariables)
 
-/**
- * Provide all the theme exposed with useTheme()
- *
- * @param darkMode : boolean
- * @param baseTheme
- * @param themeConfig
- * @param darkThemeConfig
- * @return {{[p: string]: *, NavigationTheme: {colors}, darkMode: *}}
- */
 const buildTheme = (
   darkMode: boolean,
   baseTheme: Theme,
@@ -164,13 +138,7 @@ const mergeTheme = (
     }),
     {} as Theme,
   )
-/**
- * Merge the React Navigation Theme
- *
- * @param reactNavigationTheme
- * @param overrideColors
- * @return {{colors}}
- */
+
 const mergeNavigationTheme = (
   reactNavigationTheme: ThemeNavigationTheme,
   overrideColors: ThemeNavigationColors,
