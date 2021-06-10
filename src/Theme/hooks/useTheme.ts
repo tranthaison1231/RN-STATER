@@ -1,10 +1,8 @@
 import { useColorScheme } from 'react-native'
 import { useSelector } from 'react-redux'
 import { DarkTheme, DefaultTheme } from '@react-navigation/native'
-import Fonts from '@/Theme/Fonts'
 import Gutters from '@/Theme/Gutters'
 import Images from '@/Theme/Images'
-import Layout from '@/Theme/Layout'
 import Common from '@/Theme/Common'
 import * as DefaultVariables from '@/Theme/Variables'
 import themes from '@/Theme/themes'
@@ -47,15 +45,11 @@ export default function useTheme() {
 
   // Build the default theme
   const baseTheme: Theme = {
-    Fonts: Fonts(themeVariables),
     Gutters: Gutters(themeVariables),
     Images: Images(themeVariables),
-    Layout: Layout(themeVariables),
     Common: Common({
       ...themeVariables,
-      Layout: Layout(themeVariables),
       Gutters: Gutters(themeVariables),
-      Fonts: Fonts(themeVariables),
       Images: Images(themeVariables),
     }) as ThemeCommon,
     ...themeVariables,

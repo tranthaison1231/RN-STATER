@@ -1,5 +1,10 @@
 const presets = ['module:metro-react-native-babel-preset']
 const plugins = []
+const env = {
+  production: {
+    plugins: ['react-native-paper/babel'],
+  },
+}
 
 plugins.push([
   'module-resolver',
@@ -15,4 +20,5 @@ plugins.push([
 module.exports = {
   presets,
   plugins,
+  env,
 }

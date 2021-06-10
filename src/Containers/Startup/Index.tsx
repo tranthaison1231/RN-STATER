@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
-import { ActivityIndicator, View, Text } from 'react-native'
-import { useTheme } from '@/Theme'
-import { useDispatch } from 'react-redux'
 import InitStartup from '@/Store/Startup/Init'
+import Fonts from '@/Theme/Fonts'
+import Layout from '@/Theme/Layout'
+import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Brand } from '@/Components'
+import { ActivityIndicator, Text, View } from 'react-native'
+import { useDispatch } from 'react-redux'
 
 const IndexStartupContainer = () => {
-  const { Layout, Gutters, Fonts } = useTheme()
-
   const { t } = useTranslation()
 
   const dispatch = useDispatch()
@@ -19,9 +17,8 @@ const IndexStartupContainer = () => {
 
   return (
     <View style={[Layout.fill, Layout.colCenter]}>
-      <Brand />
-      <ActivityIndicator size={'large'} style={[Gutters.largeVMargin]} />
-      <Text style={Fonts.textCenter}>{t('welcome')}</Text>
+      <ActivityIndicator size="large" />
+      <Text style={[Fonts.txtCenter, Fonts.txtLarge]}>{t('welcome')}</Text>
     </View>
   )
 }

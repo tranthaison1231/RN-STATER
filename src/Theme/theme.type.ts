@@ -39,7 +39,6 @@ export type Theme = {
   NavigationColors: ThemeNavigationColors
   FontSize: ThemeFontSize
   MetricsSizes: ThemeMetricsSizes
-  Fonts: ThemeFonts
   Images: ThemeImages
   Layout: ThemeLayout
   Gutters: ThemeGutters
@@ -51,9 +50,7 @@ export interface ThemeCommonParams {
   NavigationColors: ThemeNavigationColors
   FontSize: ThemeFontSize
   MetricsSizes: ThemeMetricsSizes
-  Fonts: ThemeFonts
   Images: ThemeImages
-  Layout: ThemeLayout
   Gutters: ThemeGutters
   Variables?: Partial<ThemeVariables>
 }
