@@ -11,14 +11,9 @@ import {
   REGISTER,
 } from 'redux-persist'
 import { configureStore } from '@reduxjs/toolkit'
-
-import startup from './Startup'
-import user from './User'
 import theme from './Theme'
 
 const reducers = combineReducers({
-  startup,
-  user,
   theme,
 })
 

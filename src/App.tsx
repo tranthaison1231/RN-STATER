@@ -3,18 +3,27 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import { store, persistor } from '@/Store'
-import { ApplicationNavigator } from '@/Navigators'
+import {
+  initialWindowMetrics,
+  SafeAreaProvider,
+} from 'react-native-safe-area-context'
 import { Provider as PaperProvider } from 'react-native-paper'
-import './Translations'
+import './configs/translations'
+import { ToastProvider } from '@/shared/components/Toast'
+import ApplicationNavigator from './Navigators'
 
 const App = () => (
-  <PaperProvider>
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <ApplicationNavigator />
-      </PersistGate>
-    </Provider>
-  </PaperProvider>
+  <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+    <PaperProvider>
+      <ToastProvider>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <ApplicationNavigator />
+          </PersistGate>
+        </Provider>
+      </ToastProvider>
+    </PaperProvider>
+  </SafeAreaProvider>
 )
 
 export default App
