@@ -1,0 +1,1 @@
+{ "*.{ts,tsx,js}": "eslint \"src/**/*.{tsx,ts}\" --fix" }
