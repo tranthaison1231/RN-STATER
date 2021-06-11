@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint \"src/**/*.{tsx,ts}\" --fix",
+    "lint-pass": "echo '\\033[4;32m♡ ' Format complete ♡' \\033[0m'",
     "type-check": "tsc --build plugins/typescript/template/tsconfig.json",
     "ios:dev": "react-native run-ios --scheme 'TestAppDevelopment'",
     "ios:prod": "react-native run-ios --scheme 'TestAppProduction'",
