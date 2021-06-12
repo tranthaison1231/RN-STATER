@@ -1,12 +1,23 @@
-import * as React from 'react'
+import Layout from '@/shared/theme/Layout'
+import { ThemeContext } from '@/shared/theme/ThemeProvider'
+import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Text } from 'react-native-paper'
+import { SafeAreaView, TouchableOpacity, View } from 'react-native'
+import { Button, Text } from 'react-native-paper'
 
 export default function Home() {
+  const { toggleTheme, theme } = useContext(ThemeContext)
   const { t } = useTranslation()
   return (
-    <>
-      <Text> {t('welcome')}</Text>
-    </>
+    <SafeAreaView style={[Layout.fill]}>
+      <View style={[Layout.rowHCenter, Layout.justifyBetween]}>
+        <Button onPress={toggleTheme} color={theme.colors.primary}>
+          Change Theme
+        </Button>
+      </View>
+      <TouchableOpacity style={[Layout.center]}>
+        <Text> {t('welcome')}</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
   )
 }

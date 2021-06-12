@@ -1,33 +1,33 @@
 import { StyleSheet } from 'react-native'
-import { Colors, FontSize } from './Variables'
+import { SIZES, DEFAULT_THEME } from './Variables'
 
 const Fonts = StyleSheet.create({
   txtSmall: {
-    fontSize: FontSize.small,
-    color: Colors.text,
+    fontSize: SIZES.h5,
+    color: DEFAULT_THEME.colors.text,
   },
   txtRegular: {
-    fontSize: FontSize.regular,
-    color: Colors.text,
+    fontSize: SIZES.h4,
+    color: DEFAULT_THEME.colors.text,
   },
   txtLarge: {
-    fontSize: FontSize.large,
-    color: Colors.text,
+    fontSize: SIZES.largeTitle,
+    color: DEFAULT_THEME.colors.text,
   },
   titleSmall: {
-    fontSize: FontSize.small * 2,
+    fontSize: SIZES.h5 * 2,
     fontWeight: 'bold',
-    color: Colors.text,
+    color: DEFAULT_THEME.colors.text,
   },
   titleRegular: {
-    fontSize: FontSize.regular * 2,
+    fontSize: SIZES.h4 * 2,
     fontWeight: 'bold',
-    color: Colors.text,
+    color: DEFAULT_THEME.colors.text,
   },
   titleLarge: {
-    fontSize: FontSize.large * 2,
+    fontSize: SIZES.largeTitle * 2,
     fontWeight: 'bold',
-    color: Colors.text,
+    color: DEFAULT_THEME.colors.text,
   },
   txtCenter: {
     textAlign: 'center',

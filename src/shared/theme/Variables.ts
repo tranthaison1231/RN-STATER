@@ -1,37 +1,41 @@
+import { Dimensions } from 'react-native'
+import { DefaultTheme, DarkTheme } from 'react-native-paper'
 import {
-  ThemeColors,
-  ThemeFontSize,
-  ThemeMetricsSizes,
-  ThemeNavigationColors,
-} from './theme.type'
+  DefaultTheme as NavigationDefaultTheme,
+  DarkTheme as NavigationDarkTheme,
+  Theme as NavigationTheme,
+} from '@react-navigation/native'
+import { Theme } from 'react-native-paper/lib/typescript/types'
 
-export const Colors: ThemeColors = {
-  transparent: 'rgba(0,0,0,0)',
-  inputBackground: '#FFFFFF',
-  white: '#ffffff',
-  text: '#212529',
-  primary: '#E14032',
-  success: '#28a745',
-  error: '#dc3545',
+export const DEFAULT_THEME: Theme & NavigationTheme = {
+  ...DefaultTheme,
+  ...NavigationDefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    ...NavigationDefaultTheme.colors,
+  },
 }
 
-export const NavigationColors: Partial<ThemeNavigationColors> = {
-  primary: Colors.primary,
+export const DARK_THEME: Theme & NavigationTheme = {
+  ...DarkTheme,
+  ...NavigationDarkTheme,
+  colors: {
+    ...DarkTheme.colors,
+    ...NavigationDarkTheme.colors,
+  },
 }
 
-export const FontSize: ThemeFontSize = {
-  small: 16,
-  regular: 20,
-  large: 40,
-}
-
-const tiny = 5 // 10
-const small = tiny * 2 // 10
-const regular = tiny * 3 // 15
-const large = regular * 2 // 30
-export const MetricsSizes: ThemeMetricsSizes = {
-  tiny,
-  small,
-  regular,
-  large,
+export const SIZES = {
+  base: 8,
+  font: 14,
+  radius: 12,
+  padding: 24,
+  largeTitle: 40,
+  h1: 28,
+  h2: 24,
+  h4: 20,
+  h5: 16,
+  h6: 12,
+  with: Dimensions.get('window').width,
+  height: Dimensions.get('window').height,
 }

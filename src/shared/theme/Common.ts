@@ -1,12 +1,15 @@
 import { StyleSheet } from 'react-native'
-import { Colors } from './Variables'
+import { DEFAULT_THEME } from './Variables'
 
 const Common = StyleSheet.create({
-  backgroundPrimary: {
-    backgroundColor: Colors.primary,
+  bgPrimary: {
+    backgroundColor: DEFAULT_THEME.colors.primary,
   },
-  backgroundReset: {
-    backgroundColor: Colors.transparent,
+  bgBlack: {
+    backgroundColor: '#000',
+  },
+  bgReset: {
+    backgroundColor: 'rgba(0,0,0,0)',
   },
 })
 

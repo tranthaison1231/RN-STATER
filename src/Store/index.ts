@@ -11,7 +11,7 @@ import {
   REGISTER,
 } from 'redux-persist'
 import { configureStore } from '@reduxjs/toolkit'
-import theme from './Theme'
+import theme from './theme'
 
 const reducers = combineReducers({
   theme,

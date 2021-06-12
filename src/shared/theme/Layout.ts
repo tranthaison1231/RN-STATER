@@ -52,13 +52,13 @@ const Layout = StyleSheet.create({
   alignItemsStretch: {
     alignItems: 'stretch',
   },
-  justifyContentCenter: {
+  justifyCenter: {
     justifyContent: 'center',
   },
-  justifyContentAround: {
+  justifyAround: {
     justifyContent: 'space-around',
   },
-  justifyContentBetween: {
+  justifyBetween: {
     justifyContent: 'space-between',
   },
   scrollSpaceAround: {

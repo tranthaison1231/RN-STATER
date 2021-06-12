@@ -1,19 +1,20 @@
-import { navigationRef } from '@/shared/navigators/Root'
 import Home from '@/screens/Home'
+import { navigationRef } from '@/shared/navigators/Root'
+import Layout from '@/shared/theme/Layout'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import React from 'react'
+import React, { useContext } from 'react'
 import { SafeAreaView, StatusBar } from 'react-native'
-import Layout from '@/shared/theme/Layout'
+import { ThemeContext } from './shared/theme/ThemeProvider'
 
 const Stack = createStackNavigator()
 
 const ApplicationNavigator = () => {
-  const darkMode = true
+  const { isThemeDark, theme } = useContext(ThemeContext)
   return (
     <SafeAreaView style={[Layout.fill]}>
-      <NavigationContainer ref={navigationRef}>
-        <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} />
+      <NavigationContainer ref={navigationRef} theme={theme}>
+        <StatusBar barStyle={isThemeDark ? 'light-content' : 'dark-content'} />
         <Stack.Navigator headerMode="none">
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
