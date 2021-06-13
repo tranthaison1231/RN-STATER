@@ -25,17 +25,17 @@ export const DARK_THEME: Theme & NavigationTheme = {
   },
 }
 
+const { width, height } = Dimensions.get('window')
+
 export const SIZES = {
-  base: 8,
-  font: 14,
-  radius: 12,
-  padding: 24,
-  largeTitle: 40,
-  h1: 28,
-  h2: 24,
-  h4: 20,
-  h5: 16,
-  h6: 12,
-  with: Dimensions.get('window').width,
-  height: Dimensions.get('window').height,
+  xs: 8,
+  sm: 16,
+  md: 20,
+  lg: 24,
+  xl: 32,
+  xxl: 40,
+  with: width,
+  height: height,
+  wp: (percentage: number) => Math.round((percentage * width) / 100),
+  hp: (percentage: number) => Math.round((percentage * height) / 100),
 }

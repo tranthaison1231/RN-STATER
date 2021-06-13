@@ -1,8 +1,12 @@
 import { NavigationContainerRef } from '@react-navigation/native'
-import * as React from 'react'
+import { createRef } from 'react'
 
-export const navigationRef = React.createRef<NavigationContainerRef>()
+export const navigationRef = createRef<NavigationContainerRef>()
 
-export function navigate(name: string, params: any) {
+export function navigate(name: string, params?: object) {
   navigationRef.current?.navigate(name, params)
+}
+
+export function goBack() {
+  navigationRef.current?.goBack()
 }

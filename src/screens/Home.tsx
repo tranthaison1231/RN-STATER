@@ -1,3 +1,4 @@
+import { navigate } from '@/shared/navigators/root'
 import Layout from '@/shared/theme/Layout'
 import { ThemeContext } from '@/shared/theme/ThemeProvider'
 import React, { useContext } from 'react'
@@ -14,6 +15,7 @@ export default function Home() {
         <Button onPress={toggleTheme} color={theme.colors.primary}>
           Change Theme
         </Button>
+        <Button onPress={() => navigate('Users')}>Go to Users</Button>
       </View>
       <TouchableOpacity style={[Layout.center]}>
         <Text> {t('welcome')}</Text>

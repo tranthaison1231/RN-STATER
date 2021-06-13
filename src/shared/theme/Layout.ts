@@ -4,7 +4,7 @@ const Layout = StyleSheet.create({
   column: {
     flexDirection: 'column',
   },
-  columnReverse: {
+  reverse: {
     flexDirection: 'column-reverse',
   },
   colCenter: {
@@ -43,13 +43,13 @@ const Layout = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  alignItemsCenter: {
+  itemsCenter: {
     alignItems: 'center',
   },
-  alignItemsStart: {
+  itemsStart: {
     alignItems: 'flex-start',
   },
-  alignItemsStretch: {
+  itemsStretch: {
     alignItems: 'stretch',
   },
   justifyCenter: {
@@ -79,10 +79,10 @@ const Layout = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
-  fullWidth: {
+  fullW: {
     width: '100%',
   },
-  fullHeight: {
+  fullH: {
     height: '100%',
   },
   mirror: {

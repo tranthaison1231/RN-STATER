@@ -3,29 +3,29 @@ import { SIZES, DEFAULT_THEME } from './Variables'
 
 const Fonts = StyleSheet.create({
   txtSmall: {
-    fontSize: SIZES.h5,
+    fontSize: SIZES.sm,
     color: DEFAULT_THEME.colors.text,
   },
   txtRegular: {
-    fontSize: SIZES.h4,
+    fontSize: SIZES.md,
     color: DEFAULT_THEME.colors.text,
   },
   txtLarge: {
-    fontSize: SIZES.largeTitle,
+    fontSize: SIZES.xxl,
     color: DEFAULT_THEME.colors.text,
   },
   titleSmall: {
-    fontSize: SIZES.h5 * 2,
+    fontSize: SIZES.sm * 2,
     fontWeight: 'bold',
     color: DEFAULT_THEME.colors.text,
   },
   titleRegular: {
-    fontSize: SIZES.h4 * 2,
+    fontSize: SIZES.md * 2,
     fontWeight: 'bold',
     color: DEFAULT_THEME.colors.text,
   },
   titleLarge: {
-    fontSize: SIZES.largeTitle * 2,
+    fontSize: SIZES.xxl * 2,
     fontWeight: 'bold',
     color: DEFAULT_THEME.colors.text,
   },
