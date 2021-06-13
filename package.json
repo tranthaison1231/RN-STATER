@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "setup": "bash ./scripts/setup.sh",
+    "rename": "npx react-native-rename",
+    "postversion": "react-native-version",
+    "bootstrap-splash": "bash ./scripts/bootstrap-splash.sh",
     "test": "jest",
     "lint-staged": "lint-staged",
     "check-types": "tsc --noEmit",
@@ -19,8 +22,7 @@
     "android:dev": "react-native run-android --variant=developmentdebug",
     "android:dev-release": "react-native run-android --variant=developmentrelease",
     "android:prod": "react-native run-android --variant=productiondebug",
-    "android:prod-release": "react-native run-android --variant=productionrelease",
-    "rename": "npx react-native-rename"
+    "android:prod-release": "react-native run-android --variant=productionrelease"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.5",
@@ -83,6 +85,7 @@
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
     "metro-react-native-babel-preset": "^0.66.0",
+    "react-native-version": "^4.0.0",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.3.2"
   },
