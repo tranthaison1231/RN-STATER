@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import React, { useContext } from 'react'
 import { SafeAreaView, StatusBar } from 'react-native'
+import RNBootSplash from 'react-native-bootsplash'
 import Users from './screens/Users'
 import linking from './shared/navigators/linking'
 import { ThemeContext } from './shared/theme/ThemeProvider'
@@ -15,7 +16,12 @@ const ApplicationNavigator = () => {
   const { isThemeDark, theme } = useContext(ThemeContext)
   return (
     <SafeAreaView style={[Layout.fill]}>
-      <NavigationContainer ref={navigationRef} linking={linking} theme={theme}>
+      <NavigationContainer
+        ref={navigationRef}
+        linking={linking}
+        theme={theme}
+        onReady={() => RNBootSplash.hide()}
+      >
         <StatusBar barStyle={isThemeDark ? 'light-content' : 'dark-content'} />
         <Stack.Navigator headerMode="none">
           <Stack.Screen name="Home" component={Home} />

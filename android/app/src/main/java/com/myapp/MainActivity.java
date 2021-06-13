@@ -1,5 +1,5 @@
 package com.myapp;
-
+import com.zoontek.rnbootsplash.RNBootSplash; 
 import com.facebook.react.ReactActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,6 +13,13 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "MyApp";
+  }
+  
+  // Add this for splash screen
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    RNBootSplash.init(R.drawable.bootsplash, MainActivity.this); // <- display the generated bootsplash.xml drawable over our MainActivity
   }
 
   // for react-native-appearance
