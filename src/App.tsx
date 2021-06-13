@@ -10,6 +10,7 @@ import {
 import { Provider as ReduxProvider } from 'react-redux'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import './configs/translations'
+import './configs/aws'
 import ApplicationNavigator from './Navigators'
 import ThemeProvider, { ThemeContext } from './shared/theme/ThemeProvider'
 

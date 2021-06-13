@@ -1,26 +1,26 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import { configureStore } from '@reduxjs/toolkit'
 import { combineReducers } from 'redux'
 import {
-  persistReducer,
-  persistStore,
   FLUSH,
-  REHYDRATE,
   PAUSE,
   PERSIST,
+  persistReducer,
+  persistStore,
   PURGE,
   REGISTER,
+  REHYDRATE,
 } from 'redux-persist'
-import { configureStore } from '@reduxjs/toolkit'
-import theme from './theme'
+import { pokemonApi } from './Pokemon'
 
 const reducers = combineReducers({
-  theme,
+  [pokemonApi.reducerPath]: pokemonApi.reducer,
 })
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['theme'],
+  whitelist: [],
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)
@@ -32,7 +32,7 @@ const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    })
+    }).concat(pokemonApi.middleware)
 
     if (__DEV__ && !process.env.JEST_WORKER_ID) {
       const createDebugger = require('redux-flipper').default
