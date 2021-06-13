@@ -20,8 +20,9 @@ To run this project, let run script:
 
 ## Features
 
-- Splash Screen with react-native-bootsplash
-- Auth with Amlify
-- Navigate with React Navigations
-- Sentry for logging
-- Mutiple env with React Native config
+- [x] Splash Screen with react-native-bootsplash
+- [x] Auth with Amlify
+- [x] Navigate with React Navigations
+- [x] Sentry for logging
+- [x] Mutiple env with React Native config
+- [ ] Firebase Cloud Messaging
