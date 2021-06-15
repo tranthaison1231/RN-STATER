@@ -1,6 +1,6 @@
 import { ToastProvider } from '@/shared/components/Toast'
 import { persistor, store } from '@/store'
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import 'react-native-gesture-handler'
 import { Provider as PaperProvider } from 'react-native-paper'
 import {

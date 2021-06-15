@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useCallback, useMemo } from 'react'
+import { useState, createContext, ReactNode, useCallback, useMemo } from 'react'
 import { DARK_THEME, DEFAULT_THEME } from './Variables'
 
 export const ThemeContext = createContext({
@@ -8,7 +8,7 @@ export const ThemeContext = createContext({
 })
 
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [isThemeDark, setIsThemeDark] = React.useState(false)
+  const [isThemeDark, setIsThemeDark] = useState(false)
 
   const toggleTheme = useCallback(() => {
     return setIsThemeDark(currentIsThemeDark => !currentIsThemeDark)

@@ -1,7 +1,7 @@
 import { navigate } from '@/shared/navigators/root'
 import Layout from '@/shared/theme/Layout'
 import { ThemeContext } from '@/shared/theme/ThemeProvider'
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { SafeAreaView, TouchableOpacity, View } from 'react-native'
 import { Button, Text } from 'react-native-paper'

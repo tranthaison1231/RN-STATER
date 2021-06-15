@@ -17,6 +17,8 @@ module.exports = {
     'react/default-props-match-prop-types': ['error'],
     'react/sort-prop-types': ['error'],
     'no-console': ['error'],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     'import/resolver': {

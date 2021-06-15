@@ -1,5 +1,20 @@
-const presets = ['module:metro-react-native-babel-preset']
-const plugins = []
+const presets = [
+  'module:metro-react-native-babel-preset',
+  [
+    '@babel/preset-react',
+    {
+      runtime: 'automatic',
+    },
+  ],
+]
+const plugins = [
+  [
+    '@babel/plugin-transform-react-jsx',
+    {
+      runtime: 'automatic',
+    },
+  ],
+]
 const env = {
   production: {
     plugins: ['react-native-paper/babel'],

@@ -44,7 +44,7 @@
     "isomorphic-fetch": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
-    "react-i18next": "^11.10.0",
+    "react-i18next": "^11.11.0",
     "react-native": "0.64.2",
     "react-native-bootsplash": "^3.2.3",
     "react-native-config": "^1.4.2",
@@ -65,8 +65,10 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.5",
-    "@babel/runtime": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-react-jsx": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.14.6",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/fbemitter": "^2.0.32",
     "@types/jest": "^26.0.23",

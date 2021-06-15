@@ -1,5 +1,4 @@
 import Layout from '@/shared/theme/Layout'
-import React from 'react'
 import { Linking, SafeAreaView, TouchableOpacity } from 'react-native'
 import { Button, Text } from 'react-native-paper'
 

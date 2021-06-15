@@ -1,10 +1,11 @@
-import React, {
+import {
   createContext,
   useContext,
   useEffect,
   useMemo,
   useReducer,
 } from 'react'
+import * as React from 'react'
 import { Keyboard, StyleProp, StyleSheet, ViewStyle } from 'react-native'
 import { Portal, Snackbar, Text } from 'react-native-paper'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
