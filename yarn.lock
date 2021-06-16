@@ -2979,10 +2979,10 @@
     "@sentry/types" "6.5.1"
     tslib "^1.9.3"
 
-"@sentry/react-native@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-2.5.0.tgz#b513e4933a983f0337d6186e8e089eda0cceb1c6"
-  integrity sha512-Oppsj0RAJDnNT781iOmycWVZqYx1/NI0yPhWJzCrQ8MStg9N8YTV5EndYc+IjPYDYk86FgLLmbtByFjU6/16ig==
+"@sentry/react-native@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-2.5.1.tgz#cf4d89d034d5b4d2475da198fdf62020fcc725f0"
+  integrity sha512-Utf/Cq98J+jk2YQ4mO+EWLfa5vyWA62tvV46Yw7dtpZlhpf7Ip3xN+OxnMdDf8H9tWWAerp/v6bcncKAnvcMQA==
   dependencies:
     "@sentry/browser" "6.5.1"
     "@sentry/core" "6.5.1"
@@ -9151,10 +9151,10 @@ react-native-fast-image@^8.3.4:
   resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.4.tgz#79edca177e30311b19d59ff335625bcbe22650d7"
   integrity sha512-LpzAdjUphihUpVEBn5fEv5AILe55rHav0YiZroPZ1rumKDhAl4u2cG01ku2Pb7l8sayjTsNu7FuURAlXUUDsow==
 
-react-native-flipper@^0.93.0:
-  version "0.93.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.93.0.tgz#f3f21bbdd5c701690741fc87b5b96d15c4a939c4"
-  integrity sha512-5lDpEOjN/sJjJlhK3Wg3GvBOL/7UlfGRpUU4inXzLdI53Pcv5WWDS9RE0s08WfWO5bBCGBRDbrOU6SdGkMlg2Q==
+react-native-flipper@^0.94.0:
+  version "0.94.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.94.0.tgz#d0bfe5710cd89e24b4d370c6f2b7a7771e8f3d1a"
+  integrity sha512-LYy8g60l594CdWcSV5onV3ySSRNLU/v7MFL+8HRRMra3ofL5I76rFDkdBxJGdvhUeUGpdr5SY9GxB0TVhwbmBg==
 
 react-native-gesture-handler@^1.10.3:
   version "1.10.3"
