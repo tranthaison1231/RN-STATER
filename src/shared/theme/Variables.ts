@@ -1,11 +1,52 @@
-import { Dimensions } from 'react-native'
-import { DefaultTheme, DarkTheme } from 'react-native-paper'
+import { Dimensions, PlatformOSType } from 'react-native'
+import { DefaultTheme, DarkTheme, configureFonts } from 'react-native-paper'
 import {
   DefaultTheme as NavigationDefaultTheme,
   DarkTheme as NavigationDarkTheme,
   Theme as NavigationTheme,
 } from '@react-navigation/native'
-import { Theme } from 'react-native-paper/lib/typescript/types'
+import { Fonts, Theme } from 'react-native-paper/lib/typescript/types'
+
+const fontConfig: {
+  [platform in PlatformOSType | 'default']?: Fonts
+} = {
+  ios: {
+    regular: {
+      fontFamily: 'Inter-Regular',
+      fontWeight: 'normal',
+    },
+    medium: {
+      fontFamily: 'Inter-Medium',
+      fontWeight: 'normal',
+    },
+    light: {
+      fontFamily: 'Inter-Light',
+      fontWeight: 'normal',
+    },
+    thin: {
+      fontFamily: 'Inter-Thin',
+      fontWeight: 'normal',
+    },
+  },
+  android: {
+    regular: {
+      fontFamily: 'Inter-Regular',
+      fontWeight: 'normal',
+    },
+    medium: {
+      fontFamily: 'Inter-Medium',
+      fontWeight: 'normal',
+    },
+    light: {
+      fontFamily: 'Inter-Light',
+      fontWeight: 'normal',
+    },
+    thin: {
+      fontFamily: 'Inter-Thin',
+      fontWeight: 'normal',
+    },
+  },
+}
 
 export const DEFAULT_THEME: Theme & NavigationTheme = {
   ...DefaultTheme,
@@ -14,6 +55,7 @@ export const DEFAULT_THEME: Theme & NavigationTheme = {
     ...DefaultTheme.colors,
     ...NavigationDefaultTheme.colors,
   },
+  fonts: configureFonts(fontConfig),
 }
 
 export const DARK_THEME: Theme & NavigationTheme = {
@@ -23,6 +65,7 @@ export const DARK_THEME: Theme & NavigationTheme = {
     ...DarkTheme.colors,
     ...NavigationDarkTheme.colors,
   },
+  fonts: configureFonts(fontConfig),
 }
 
 const { width, height } = Dimensions.get('window')

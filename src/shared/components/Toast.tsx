@@ -10,6 +10,7 @@ import { Keyboard, StyleProp, StyleSheet, ViewStyle } from 'react-native'
 import { Portal, Snackbar, Text } from 'react-native-paper'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { SIZES } from '../theme/Variables'
 
 type ToastType = 'info' | 'normal' | 'success' | 'warning' | 'error'
 type ToastPosition = 'top' | 'bottom' | 'middle'
@@ -139,7 +140,7 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({
             action: { label: state.actionLabel, onPress: state.action },
           })}
         >
-          <Icon size={20} name={icons[state.type]} color="#ffffff" />
+          <Icon size={SIZES.md} name={icons[state.type]} color="#ffffff" />
           <Text style={styles.message}>{` ${state.message}`}</Text>
         </Snackbar>
       </Portal>

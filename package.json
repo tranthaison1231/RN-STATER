@@ -5,8 +5,9 @@
   "scripts": {
     "setup": "bash ./scripts/setup.sh",
     "rename": "npx react-native-rename",
-    "postversion": "react-native-version",
+    "post-version": "react-native-version",
     "bootstrap-splash": "bash ./scripts/bootstrap-splash.sh",
+    "copy-local-font": "cp ./src/assets/Fonts/IconFont/Fonts/pikthat-app.ttf ./node_modules/react-native-vector-icons/Fonts/pikthat-app.ttf",
     "test": "jest",
     "lint-staged": "lint-staged",
     "check-types": "tsc --noEmit",
