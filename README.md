@@ -25,4 +25,5 @@ To run this project, let run script:
 - [x] Navigate with React Navigations
 - [x] Sentry for logging
 - [x] Mutiple env with React Native config
+- [x] Local font
 - [ ] Firebase Cloud Messaging
