@@ -344,7 +344,7 @@ PODS:
     - react-native-config/App (= 1.4.2)
   - react-native-config/App (1.4.2):
     - React-Core
-  - react-native-flipper (0.93.0):
+  - react-native-flipper (0.95.0):
     - React-Core
   - react-native-netinfo (6.0.0):
     - React-Core
@@ -416,7 +416,7 @@ PODS:
     - React-perflogger (= 0.64.2)
   - RNAWSCognito (5.0.3):
     - React-Core
-  - RNBootSplash (3.2.3):
+  - RNBootSplash (3.2.4):
     - React-Core
   - RNCAsyncStorage (1.15.5):
     - React-Core
@@ -468,10 +468,10 @@ PODS:
     - React-RCTVibration
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.3.0):
+  - RNScreens (3.4.0):
     - React-Core
     - React-RCTImage
-  - RNSentry (2.5.0):
+  - RNSentry (2.6.0):
     - React-Core
     - Sentry (= 7.0.0)
   - RNVectorIcons (8.1.0):
@@ -743,7 +743,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
   react-native-config: c98128a72bc2c3a1ca72caec0b021f0fa944aa29
-  react-native-flipper: d6e247954bd180572acd775dabecaef6ce967b1e
+  react-native-flipper: 5747805d48aed98aa521074c9d71a99ae28e07cf
   react-native-netinfo: e849fc21ca2f4128a5726c801a82fc6f4a6db50d
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
@@ -759,7 +759,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
   RNAWSCognito: a89946398b7fe2a387ad6af326fb69d82203f6db
-  RNBootSplash: 8ef5ffa03dadd35f66510b42960ce40f397c98bf
+  RNBootSplash: 4844706cbb56a3270556c9b94e59dedadccd47e4
   RNCAsyncStorage: 56a3355a10b5d660c48c6e37325ac85ebfd09885
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNDeviceInfo: 8d3a29207835f972bce883723882980143270d55
@@ -769,8 +769,8 @@ SPEC CHECKSUMS:
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNPermissions: c46788f4cd402287425983e04a4c9bb4356036eb
   RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
-  RNScreens: bf59f17fbf001f1025243eeed5f19419d3c11ef2
-  RNSentry: c536a1f6d7e042b05b7d52c522e975458e032c7d
+  RNScreens: 21b73c94c9117e1110a79ee0ee80c93ccefed8ce
+  RNSentry: a2b02b326ae4fce91ce7c57d3f7dcf8df4f72269
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21

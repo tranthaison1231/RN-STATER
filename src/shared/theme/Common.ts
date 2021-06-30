@@ -11,6 +11,13 @@ const Common = StyleSheet.create({
   bgReset: {
     backgroundColor: 'rgba(0,0,0,0)',
   },
+  colorPrimary: {
+    color: DEFAULT_THEME.colors.primary,
+  },
+  introImage: {
+    width: 300,
+    height: 300,
+  },
 })
 
 export default Common

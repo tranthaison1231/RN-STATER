@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import messaging from '@react-native-firebase/messaging'
 import { Permission, Platform } from 'react-native'
 import {

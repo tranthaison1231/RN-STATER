@@ -51,7 +51,6 @@ static void InitializeFlipper(UIApplication *application) {
   [self.window makeKeyAndVisible];
 
   [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView]; 
-
   return YES;
 }
 

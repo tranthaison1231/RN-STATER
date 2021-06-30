@@ -16,7 +16,6 @@ import ThemeProvider, { ThemeContext } from './shared/theme/ThemeProvider'
 
 const Main = () => {
   const { theme } = useContext(ThemeContext)
-
   return (
     <ReduxProvider store={store}>
       <PersistGate loading={null} persistor={persistor}>

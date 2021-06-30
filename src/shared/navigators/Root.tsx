@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NavigationContainerRef } from '@react-navigation/native'
 import { createRef } from 'react'
 
