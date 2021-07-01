@@ -9161,10 +9161,10 @@ react-native-fast-image@^8.3.4:
   resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.4.tgz#79edca177e30311b19d59ff335625bcbe22650d7"
   integrity sha512-LpzAdjUphihUpVEBn5fEv5AILe55rHav0YiZroPZ1rumKDhAl4u2cG01ku2Pb7l8sayjTsNu7FuURAlXUUDsow==
 
-react-native-flipper@^0.95.0:
-  version "0.95.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.95.0.tgz#2c146bda9489e6104001bea04ba4eeb60df01a27"
-  integrity sha512-LpnsAXUKRRRuS00Zh/pEwo3WC45W06PK11KFYGKHu47B+tuh1LkdnpS9QRhTaPuZDMlGhnN0xtwUtwgYzpJCBA==
+react-native-flipper@^0.96.0:
+  version "0.96.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.96.0.tgz#42446280acd616828c7d6ebde093a11aa7de4511"
+  integrity sha512-aPvaLOT0xSD1D+jeqXR25tJk15i8NVkVP+PDInue+b7wPtCe8e018HIEccZMW8dS/f8nv3DxJNOOCw4lavUNWA==
 
 react-native-gesture-handler@^1.10.3:
   version "1.10.3"
@@ -10547,10 +10547,10 @@ typedarray-to-buffer@^3.1.2, typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
-  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
+typescript@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
 ua-parser-js@^0.7.18:
   version "0.7.28"

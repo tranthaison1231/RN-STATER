@@ -3,54 +3,40 @@ import Fonts from '@/shared/theme/Fonts'
 import Gutters from '@/shared/theme/Gutters'
 import Layout from '@/shared/theme/Layout'
 import { useNavigation, useTheme } from '@react-navigation/native'
-import { Keyboard, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import { Button, IconButton, TextInput } from 'react-native-paper'
 
-const SignUp = () => {
+const Login = () => {
   const { colors } = useTheme()
   const { navigate } = useNavigation()
 
-  const signUp = () => {
-    Keyboard.dismiss()
-  }
-
-  const redirectToLogin = () => {
-    navigate('Login')
+  const redirectToForgotPassword = () => {
+    navigate('ForgotPassword')
   }
 
   return (
     <View style={[Gutters.mdPading]}>
       <Text style={[Fonts.titleSmall, Gutters.xlVMargin]}>Sign Up</Text>
-      <TextInput label="Name" style={[Gutters.xsVMargin]} mode="outlined" />
       <TextInput
         label="Email"
         style={[Gutters.xsVMargin]}
         mode="outlined"
         keyboardType="email-address"
       />
-      <TextInput
-        label="Password"
-        style={[Gutters.xsVMargin]}
-        mode="outlined"
-        secureTextEntry
-      />
+      <TextInput label="Email" style={[Gutters.xsVMargin]} mode="outlined" />
       <View style={[Layout.rowCenter, Layout.justifyEnd, Gutters.xsVMargin]}>
-        <Text>Already have an account?</Text>
+        <Text>Forgot your password?</Text>
         <IconButton
           icon="arrow-right"
           color={colors.primary}
-          onPress={redirectToLogin}
+          onPress={redirectToForgotPassword}
         />
       </View>
-      <Button
-        mode="contained"
-        style={[Gutters.xsVMargin, Common.largeButton]}
-        onPress={signUp}
-      >
+      <Button mode="contained" style={[Gutters.xsVMargin, Common.largeButton]}>
         SIGN UP
       </Button>
     </View>
   )
 }
 
-export default SignUp
+export default Login

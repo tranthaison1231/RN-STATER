@@ -49,8 +49,14 @@ const Layout = StyleSheet.create({
   itemsStart: {
     alignItems: 'flex-start',
   },
+  itemsEnd: {
+    alignItems: 'flex-end',
+  },
   itemsStretch: {
     alignItems: 'stretch',
+  },
+  justifyEnd: {
+    justifyContent: 'flex-end',
   },
   justifyCenter: {
     justifyContent: 'center',

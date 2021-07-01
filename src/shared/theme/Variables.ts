@@ -54,6 +54,7 @@ export const DEFAULT_THEME: Theme & NavigationTheme = {
   colors: {
     ...DefaultTheme.colors,
     ...NavigationDefaultTheme.colors,
+    primary: '#DB3022',
   },
   fonts: configureFonts(fontConfig),
 }

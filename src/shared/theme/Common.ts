@@ -18,6 +18,11 @@ const Common = StyleSheet.create({
     width: 300,
     height: 300,
   },
+  largeButton: {
+    height: 52,
+    borderRadius: 36,
+    justifyContent: 'center',
+  },
 })
 
 export default Common
