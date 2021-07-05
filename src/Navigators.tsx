@@ -1,4 +1,4 @@
-import { navigationRef } from '@/shared/navigators/root'
+import { navigationRef, SCREENS } from '@/shared/navigators/root'
 import Layout from '@/shared/theme/Layout'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
@@ -41,13 +41,13 @@ const ApplicationNavigator = () => {
                 barStyle={isThemeDark ? 'light-content' : 'dark-content'}
               />
               <Stack.Navigator headerMode="none">
-                <Stack.Screen name="SignUp" component={SignUp} />
-                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name={SCREENS.SIGN_UP} component={SignUp} />
+                <Stack.Screen name={SCREENS.LOGIN} component={Login} />
                 <Stack.Screen
-                  name="ForgotPassword"
+                  name={SCREENS.FORGOT_PASSWORD}
                   component={ForgotPassword}
                 />
-                <Stack.Screen name="Users" component={Users} />
+                <Stack.Screen name={SCREENS.USERS} component={Users} />
               </Stack.Navigator>
             </>
           )

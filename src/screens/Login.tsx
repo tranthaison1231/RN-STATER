@@ -1,3 +1,4 @@
+import { SCREENS } from '@/shared/navigators/root'
 import Common from '@/shared/theme/Common'
 import Fonts from '@/shared/theme/Fonts'
 import Gutters from '@/shared/theme/Gutters'
@@ -11,7 +12,7 @@ const Login = () => {
   const { navigate } = useNavigation()
 
   const redirectToForgotPassword = () => {
-    navigate('ForgotPassword')
+    navigate(SCREENS.FORGOT_PASSWORD)
   }
 
   return (

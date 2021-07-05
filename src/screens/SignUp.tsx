@@ -1,3 +1,4 @@
+import { SCREENS } from '@/shared/navigators/root'
 import Common from '@/shared/theme/Common'
 import Fonts from '@/shared/theme/Fonts'
 import Gutters from '@/shared/theme/Gutters'
@@ -15,7 +16,7 @@ const SignUp = () => {
   }
 
   const redirectToLogin = () => {
-    navigate('Login')
+    navigate(SCREENS.LOGIN)
   }
 
   return (
